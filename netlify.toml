@@ -5,3 +5,6 @@
 [build]
   command = "yarn build && yarn export"
   publish = "out"
+
+[context.production]
+  environment = { WORDPRESS_GRAPHQL_ENDPOINT = "https://hillandvalleynews.com/graphql"}
